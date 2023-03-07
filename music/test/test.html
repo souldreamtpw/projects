@@ -1,0 +1,50 @@
+<!--
+ * @Author: souldream
+ * @Date: 2022-04-23 20:07:52
+ * @LastEditTime: 2022-04-23 23:07:18
+ * @LastEditors: souldream
+ * @Description: 
+ * 可以输入预定的版权声明、个性签名、空行等
+-->
+<!doctype html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+	<title>轮播图</title>
+	<style>
+	    #pp2{
+		width:9999px;
+		height:9999px;
+		animation:switch 15s infinite;
+		}
+		#pp2>img{
+		float:left;
+		}
+		#pp1{
+		width:820px;
+		height:340px;
+		overflow:hidden;
+		}
+		@keyframes switch{
+		0%{};
+		20%{transform:translateX(0px);}
+		40%{transform:translateX(-820px);}
+		60%{transform:translateX(-1640px);}
+		80%{transform:translateX(-2460px);}
+		100%{transform:translateX(-3280px);}
+		}
+		
+	</style>
+</head>
+    <body>
+	    <div id="pp1">
+		    <div id="pp2">
+			     <img src="test/img/1.jpg"/>
+			     <img src="test/img/2.jpg"/>
+			     <img src="test/img/3.jpg"/>
+			     <img src="test/img/4.jpg"/>
+			     <img src="test/img/5.jpg"/>
+			</div>
+	    </div>
+    </body>
+</html>
